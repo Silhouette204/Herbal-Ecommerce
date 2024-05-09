@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HerbalProducts | Ecommerse Website Design</title>
+        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+  
+<div class="header">
+<div class="container">
+    <div class="navbar">
+    <div class="logo">
+ <a href="index.html"><img src="https://th.bing.com/th/id/OIP.2ltxmcH596FqD1e_wYTnVQAAAA?pid=ImgDet&rs=1" width="110px"></a>
+    </div>
+    <nav>
+      <ul id="MenuItems">
+        <li><a href="index.html">Home</a></il>
+         <li><a href="products.html">Products</a></il>      
+          <li><a href="">About</a></il>     
+            <li><a href="">Contact</a></il>   
+               <li><a href="account.html">Account</a></il>
+           </ul>
+    </nav>
+       <a href="cart.html"><img src="https://th.bing.com/th/id/OIP.U05Ur0Z2RL8iFYVnZsnMSwHaHa?pid=ImgDet&rs=1"width="30px" height="30px" onclick="menutoggle()"></a>
+      
+  </div>
+</div>
+ </div>
+ </div> 
+<!-------------account--------------->
+  <div class="account-page">
+    <div class="container">
+     <div class="row">
+      <div class="col-2">
+   <img src="https://th.bing.com/th/id/R.c868205eed23f1c9bc418bfa9e847860?rik=TxB8X8nDJ%2fB3dQ&riu=http%3a%2f%2funopremier.com%2fv2%2fwp-content%2fuploads%2f2016%2f06%2fUNO-All-USA-Products-01-e1466002478418.png&ehk=efCONHjt6tEO28bHynk5A%2baVB%2bX6%2f39U0X0s9ip6MEo%3d&risl=&pid=ImgRaw&r=0" width="100%">
+      </div>
+      
+    <div class="col-2">
+      <div class="form-container">
+      <div class="form-btn">
+        <span onclick="login()">Login</span>
+        <span onclick="register()">Register</span>
+        <hr id="Indicator"> 
+      </div>
+
+        <form id="LoginForm">
+          <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+    <button type="submit" class="account-btn">Login</button>
+          <a href="">Forgot Password?</a>
+    <button type="submit"class="account-btn">or with facebook</button>
+<button type="submit"class="account-btn">or with google</button>            
+ 
+          </form>
+        
+        <form id="RegForm">
+          <input type="text" placeholder="Username">
+      <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+ <button type="submit"class="account-btn">Register</button> 
+  <button type="submit"class="account-btn">or with facebook</button>
+<button type="submit"class="account-btn">or with google</button>
+        </form>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+          <!---------------js toggle menu---------------->
+        <script>
+          var MenuItems = document.getElementById("MenuItems");
+          
+                  MenuItems.style.transform.maxHeight == "0px";
+          
+          function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px"
+
+            }
+            </script>
+        <!---------------js for toggle Form------------->        
+<script>
+  
+  var LoginForm = document.getElementById("LoginForm");
+  var RegForm = document.getElementById("RegForm");
+  var Indicator = document.getElementById("Indicator");
+
+  function register(){
+    
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+
+  }
+  
+  function login(){
+    
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+
+  }
+
+
+</script>
+
+
+
+        
+</body>
+</html>

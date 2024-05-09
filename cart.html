@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HerbalProducts | Ecommerse Website Design</title>
+        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+  
+
+<div class="container">
+    <div class="navbar">
+    <div class="logo">
+ <a href="index.html"><img src="https://th.bing.com/th/id/OIP.2ltxmcH596FqD1e_wYTnVQAAAA?pid=ImgDet&rs=1" width="105px"></a>
+    </div>
+    <nav>
+      <ul id="MenuItems">
+        <li><a href="index.html">Home</a></il>
+         <li><a href="products.html">Products</a></il>      
+          <li><a href="">About</a></il>     
+            <li><a href="">Contact</a></il>   
+               <li><a href="account.html">Account</a></il>
+           </ul>
+    </nav>
+      <a href="cart.html"><img src="https://th.bing.com/th/id/OIP.U05Ur0Z2RL8iFYVnZsnMSwHaHa?pid=ImgDet&rs=1"width="30px" height="30px" onclick="menutoggle()"></a>
+  </div>
+   </div>
+  </div>
+  </div>
+  </div>
+  
+<!----------------cart item details----------->
+<div class="small-container cart-page">
+  <table>
+    <tr>
+      <th>Product</th>
+      <th>Quantity</th>
+      <th>Subtotal</th>
+    </tr>
+    <tr>
+      <td>
+        <div class="cart-info">
+<img src="https://th.bing.com/th/id/OIP.syVZBRb3_F7RPo-1Qjd2KgHaHj?pid=ImgDet&rs=1"> 
+          <div>
+            <p>Buah Merah</p>
+            <small>Price: ₱169</small>
+            <br>
+            
+            <a href="">Remove</a>
+          </div>
+      </td>
+      <td><input type="number" value="1"></td>
+      <td>₱338</td>
+    </tr>
+
+     <tr>
+      <td>
+        <div class="cart-info">
+<img src="https://cf.shopee.ph/file/2c204d82ea0656d38ad3af5674ef5f05"> 
+          <div>
+            <p>BMRS Nutria Lifestyles 60 capsules</p>
+            <small>Price: ₱1,499</small>
+            <br>
+            
+            <a href="">Remove</a>
+          </div>
+      </td>
+      <td><input type="number" value="1"></td>
+      <td>₱1,499</td>
+    </tr>
+
+    <tr>
+      <td>
+        <div class="cart-info">
+<img src="https://cf.shopee.ph/file/95033967b8f5b43b61cbced0a4f028cd_tn"> 
+          <div>
+            <p>Golden Seed Coffee Collagen Coffee Herbal Drink Mix</p>
+            <small>Price: ₱210</small>
+            <br>
+            
+            <a href="">Remove</a>
+          </div>
+      </td>
+      <td><input type="number" value="1"></td>
+      <td>₱420</td>
+    </tr>
+  
+  
+    
+       <td><a href="proceed-pay.html" class="btn">Proceed To Pay</a></td>
+    
+  
+</div>
+<!---------------js toggle menu---------------->
+        <script>
+          var MenuItems = document.getElementById("MenuItems");
+          
+                  MenuItems.style.transform.maxHeight == "0px";
+          
+          function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px"
+
+            }
+          }
+        </script>
+ 
+
+
+        
+</body>
+</html>
